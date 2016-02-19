@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="10001">
+      <Receiver>
+        <Name>EventReceiverForReplyListItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f</Assembly>
+        <Class>SPForumsSourceCode.SPForumsReplyList.EventReceiverForReplyList.EventReceiverForReplyList</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

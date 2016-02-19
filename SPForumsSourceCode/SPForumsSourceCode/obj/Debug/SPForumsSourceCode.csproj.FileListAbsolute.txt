@@ -1,0 +1,4 @@
+D:\MyProjects\SPForumsSourceCode\SPForumsSourceCode\bin\Debug\SPForumsSourceCode.dll
+D:\MyProjects\SPForumsSourceCode\SPForumsSourceCode\bin\Debug\SPForumsSourceCode.pdb
+D:\MyProjects\SPForumsSourceCode\SPForumsSourceCode\obj\Debug\SPForumsSourceCode.dll
+D:\MyProjects\SPForumsSourceCode\SPForumsSourceCode\obj\Debug\SPForumsSourceCode.pdb

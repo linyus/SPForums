@@ -1,0 +1,21 @@
+﻿#sideNavBox
+{
+    display: none !important;
+}
+
+#contentBox
+{
+    margin-left: 20px !important;
+}
+
+#s4-titlerow
+{
+    display: none !important;
+}
+
+.replyTitleCss
+{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

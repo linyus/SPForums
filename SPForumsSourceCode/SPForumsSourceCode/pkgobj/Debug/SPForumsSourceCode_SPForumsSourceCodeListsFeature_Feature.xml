@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SPForumsSourceCode Lists Feature" Id="60ad5ef8-f314-40f4-a6fe-cd66d40f33e8" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="SPForumsPostListInstance\Elements.xml" />
+    <ElementManifest Location="SPForumsPostList\Elements.xml" />
+    <ElementFile Location="SPForumsPostList\Schema.xml" />
+    <ElementManifest Location="SPForumsReplyListInstance\Elements.xml" />
+    <ElementManifest Location="SPForumsReplyList\Elements.xml" />
+    <ElementFile Location="SPForumsReplyList\Schema.xml" />
+    <ElementManifest Location="SPForumsPostTypeListInstance\Elements.xml" />
+    <ElementManifest Location="SPForumsPostTypeList\Elements.xml" />
+    <ElementFile Location="SPForumsPostTypeList\Schema.xml" />
+    <ElementManifest Location="SPForumsMessageListInstance\Elements.xml" />
+    <ElementManifest Location="SPForumsMessageList\Elements.xml" />
+    <ElementFile Location="SPForumsMessageList\Schema.xml" />
+    <ElementManifest Location="EventReceiverForMessageList\Elements.xml" />
+    <ElementManifest Location="EventReceiverForReplyList\Elements.xml" />
+  </ElementManifests>
+</Feature>

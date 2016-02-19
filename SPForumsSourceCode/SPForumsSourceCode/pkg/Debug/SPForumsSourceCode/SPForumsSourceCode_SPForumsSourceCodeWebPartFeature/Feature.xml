@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SPForumsSourceCodeWebPart Feature" Id="20bcbaee-4889-44d1-80c6-715722095ecb" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="SPForumsVWPNotice\Elements.xml" />
+    <ElementFile Location="SPForumsVWPNotice\SPForumsVWPNotice.webpart" />
+    <ElementManifest Location="SPForumsVWPReply\Elements.xml" />
+    <ElementFile Location="SPForumsVWPReply\SPForumsVWPReply.webpart" />
+    <ElementManifest Location="SPForumsVWPLeftMenu\Elements.xml" />
+    <ElementFile Location="SPForumsVWPLeftMenu\SPForumsVWPLeftMenu.webpart" />
+    <ElementManifest Location="SPForumsVWPNoticeAlert\Elements.xml" />
+    <ElementFile Location="SPForumsVWPNoticeAlert\SPForumsVWPNoticeAlert.webpart" />
+    <ElementManifest Location="SPForumsWPModifyUnReadState\Elements.xml" />
+    <ElementFile Location="SPForumsWPModifyUnReadState\SPForumsWPModifyUnReadState.webpart" />
+  </ElementManifests>
+</Feature>

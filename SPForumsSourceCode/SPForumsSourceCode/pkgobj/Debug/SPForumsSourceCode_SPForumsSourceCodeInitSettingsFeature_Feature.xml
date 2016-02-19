@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SPForumsSourceCode InitSettings Feature" Description="Incluede add webpart to page, create sharepoint group for permission control and so on." Id="71c668ab-817f-4e68-82bb-53beab71d043" ReceiverAssembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" ReceiverClass="SPForumsSourceCode.Features.SPForumsSourceCodeInitSettingsFeature.SPForumsSourceCodeInitSettingsFeatureEventReceiver" Scope="Site"></Feature>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SPForumsSourceCode Modules Feature" Id="85e703cd-9cfa-4629-b0dd-0e9ac79e5a92" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="SPForumsMasterPage\Elements.xml" />
+    <ElementFile Location="SPForumsMasterPage\SPForums.master" />
+    <ElementManifest Location="SPForumsHomePage\Elements.xml" />
+    <ElementFile Location="SPForumsHomePage\SPForums.aspx" />
+    <ElementFile Location="SPForumsHomePage\SPForumsMessage.aspx" />
+  </ElementManifests>
+</Feature>

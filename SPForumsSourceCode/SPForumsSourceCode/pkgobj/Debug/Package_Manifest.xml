@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="66a6454c-072e-472e-9d99-f2d4fad2a2bc" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SPForumsSourceCode.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" Namespace="SPForumsSourceCode.SPForumsVWPNotice" TypeName="*" />
+        <SafeControl Assembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" Namespace="SPForumsSourceCode.SPForumsVWPReply" TypeName="*" />
+        <SafeControl Assembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" Namespace="SPForumsSourceCode.SPForumsVWPLeftMenu" TypeName="*" />
+        <SafeControl Assembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" Namespace="SPForumsSourceCode.SPForumsVWPNoticeAlert" TypeName="*" />
+        <SafeControl Assembly="SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f" Namespace="SPForumsSourceCode.SPForumsWPModifyUnReadState" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SPForumsSourceCode\SPForums.css" />
+    <TemplateFile Location="Layouts\SPForumsSourceCode\SPForums.js" />
+    <TemplateFile Location="Pages\SPForumsform.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SPForumsSourceCode_SPForumsSourceCodeListsFeature\Feature.xml" />
+    <FeatureManifest Location="SPForumsSourceCode_SPForumsSourceCodeWebPartFeature\Feature.xml" />
+    <FeatureManifest Location="SPForumsSourceCode_SPForumsSourceCodeModulesFeature\Feature.xml" />
+    <FeatureManifest Location="SPForumsSourceCode_SPForumsSourceCodeInitSettingsFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

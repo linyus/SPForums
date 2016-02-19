@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SPForumsPostList" OnQuickLaunch="True" TemplateType="10000" Url="Lists/SPForumsPostList" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">SharePoint 2013 Custom List View WebPart</Field>
+          <Field Name="PostType">2;#SharePoint</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Asp.Net Open Source Program</Field>
+          <Field Name="PostType">1;#Asp.Net</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">SharePoint 2016 Update Information</Field>
+          <Field Name="PostType">2;#SharePoint</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">How to setup Office 2013</Field>
+          <Field Name="PostType">3;#Office</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Do you like windows 10</Field>
+          <Field Name="PostType">5;#Windows</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Vistual Studio 2013 Update Download</Field>
+          <Field Name="PostType">4;#Visual Studio</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">This is a long Title test data, Is it long enough for our testing? thank you very much. It's a good test data.</Field>
+          <Field Name="PostType">4;#Visual Studio</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

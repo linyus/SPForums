@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/SPForumsPostList">
+      <Receiver>
+        <Name>EventReceiverForMessageListItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>SPForumsSourceCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=518ac1dab453508f</Assembly>
+        <Class>SPForumsSourceCode.SPForumsPostList.EventReceiverForMessageList.EventReceiverForMessageList</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>
