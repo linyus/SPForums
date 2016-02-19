@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SPForumsPostTypeList" OnQuickLaunch="TRUE" TemplateType="10002" Url="Lists/SPForumsPostTypeList" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Asp.Net</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">SharePoint</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Office</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Visual Studio</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Windows</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

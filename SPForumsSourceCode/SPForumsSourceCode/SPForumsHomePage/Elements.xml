@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SPForumsHomePage" Url="SitePages">
+    <File Path="SPForumsHomePage\SPForums.aspx" Url="SPForums.aspx" Type="GhostableInLibrary" />
+    <File Path="SPForumsHomePage\SPForumsMessage.aspx" Url="SPForumsMessage.aspx" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

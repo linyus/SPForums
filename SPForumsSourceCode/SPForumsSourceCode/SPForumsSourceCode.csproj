@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0FC9CC8-FA05-4C2F-BCDE-530664D06650}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPForumsSourceCode</RootNamespace>
+    <AssemblyName>SPForumsSourceCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\SPForumsSourceCodeInitSettingsFeature\SPForumsSourceCodeInitSettingsFeature.EventReceiver.cs">
+      <DependentUpon>SPForumsSourceCodeInitSettingsFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPForumsPostList\EventReceiverForMessageList\EventReceiverForMessageList.cs" />
+    <Compile Include="SPForumsReplyList\EventReceiverForReplyList\EventReceiverForReplyList.cs" />
+    <Compile Include="SPForumsVWPLeftMenu\SPForumsVWPLeftMenu.ascx.cs">
+      <DependentUpon>SPForumsVWPLeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPLeftMenu\SPForumsVWPLeftMenu.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPForumsVWPLeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPNoticeAlert\SPForumsVWPNoticeAlert.ascx.cs">
+      <DependentUpon>SPForumsVWPNoticeAlert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPNoticeAlert\SPForumsVWPNoticeAlert.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPForumsVWPNoticeAlert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPNotice\SPForumsVWPNotice.ascx.cs">
+      <DependentUpon>SPForumsVWPNotice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPNotice\SPForumsVWPNotice.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPForumsVWPNotice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPReply\SPForumsVWPReply.ascx.cs">
+      <DependentUpon>SPForumsVWPReply.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsVWPReply\SPForumsVWPReply.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPForumsVWPReply.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SPForumsWPModifyUnReadState\SPForumsWPModifyUnReadState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\SPForumsSourceCodeInitSettingsFeature\SPForumsSourceCodeInitSettingsFeature.feature">
+      <FeatureId>{18e10253-40de-49ff-a612-577b1f2db3ac}</FeatureId>
+    </None>
+    <None Include="Features\SPForumsSourceCodeModulesFeature\SPForumsSourceCodeModulesFeature.feature">
+      <FeatureId>{b898ce00-498c-4f11-9f7a-5ab62a39b23e}</FeatureId>
+    </None>
+    <None Include="Features\SPForumsSourceCodeWebPartFeature\SPForumsSourceCodeWebPartFeature.feature">
+      <FeatureId>{0dd04973-0a5f-4372-b7a0-6e7fbffdf7f3}</FeatureId>
+    </None>
+    <None Include="Features\SPForumsSourceCodeListsFeature\SPForumsSourceCodeListsFeature.feature">
+      <FeatureId>{e7f6b311-9455-4a35-a7c8-c66c85664c70}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{413da32d-b163-4200-9fe1-f94e3ed47cfa}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{66a6454c-072e-472e-9d99-f2d4fad2a2bc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c08f04a-c12f-4039-af6d-dea408ab190e}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsHomePage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d1cbbcb-c9e4-45fe-bb67-4561cc475fbf}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsMasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d6888b1-abee-4440-9599-899d4f66e97a}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsMasterPage\SPForums.master" />
+    <None Include="SPForumsMessageList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59d52820-5a2f-43fa-b632-664cf064d676}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsMessageList\SPForumsMessageListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{604fda4a-87cd-424a-9d2f-40a9d8b78c3b}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsPostList\EventReceiverForMessageList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da11a7c6-c8e1-4eb2-bf57-eeb7e81bc4e2}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsPostList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c148048e-c5ed-4c66-bf3e-264f86f94832}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsPostList\SPForumsPostListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf14d617-91c1-4b09-b79b-804cf6efb0a4}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsPostTypeList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73ae930a-9dce-48c6-9e73-a2c4fe239c83}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsPostTypeList\SPForumsPostTypeListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06fca60d-6e32-4066-a4c7-6e3441c56605}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsReplyList\EventReceiverForReplyList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1801d65e-004d-456e-9958-374a944ec1e6}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsReplyList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{691a43cc-85ee-4a07-aaa2-9c5120c77e63}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsReplyList\SPForumsReplyListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12f20b78-0ed9-49ab-a1b2-1a6bee549447}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsVWPLeftMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d43591ed-5a82-495c-8989-ebfcaca48124}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsVWPLeftMenu\SPForumsVWPLeftMenu.webpart" />
+    <None Include="SPForumsVWPNoticeAlert\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f805f633-c6fd-4f8d-92b4-85109d959aa6}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsVWPNoticeAlert\SPForumsVWPNoticeAlert.webpart" />
+    <None Include="SPForumsVWPNotice\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07eb2e40-a71d-4401-ae3c-1c649c2dbdbb}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsVWPNotice\SPForumsVWPNotice.webpart" />
+    <None Include="SPForumsVWPReply\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84e467b6-2605-44a2-836b-77eda81f87b1}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsVWPReply\SPForumsVWPReply.webpart" />
+    <None Include="SPForumsWPModifyUnReadState\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{58e6383f-6a52-4dae-abe7-ab535ba51ed9}</SharePointProjectItemId>
+    </None>
+    <None Include="SPForumsWPModifyUnReadState\SPForumsWPModifyUnReadState.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\SPForumsSourceCodeInitSettingsFeature\SPForumsSourceCodeInitSettingsFeature.Template.xml">
+      <DependentUpon>SPForumsSourceCodeInitSettingsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SPForumsSourceCodeModulesFeature\SPForumsSourceCodeModulesFeature.Template.xml">
+      <DependentUpon>SPForumsSourceCodeModulesFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SPForumsSourceCodeWebPartFeature\SPForumsSourceCodeWebPartFeature.Template.xml">
+      <DependentUpon>SPForumsSourceCodeWebPartFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SPForumsSourceCodeListsFeature\SPForumsSourceCodeListsFeature.Template.xml">
+      <DependentUpon>SPForumsSourceCodeListsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\SPForumsSourceCode\SPForums.css" />
+    <Content Include="Layouts\SPForumsSourceCode\SPForums.js" />
+    <Content Include="Pages\SPForumsform.aspx" />
+    <Content Include="SPForumsHomePage\SPForumsMessage.aspx" />
+    <Content Include="SPForumsHomePage\Elements.xml" />
+    <Content Include="SPForumsHomePage\SPForums.aspx" />
+    <Content Include="SPForumsMasterPage\Elements.xml" />
+    <Content Include="SPForumsMessageList\Elements.xml" />
+    <Content Include="SPForumsMessageList\Schema.xml" />
+    <Content Include="SPForumsMessageList\SPForumsMessageListInstance\Elements.xml" />
+    <Content Include="SPForumsPostList\Elements.xml" />
+    <Content Include="SPForumsPostList\EventReceiverForMessageList\Elements.xml" />
+    <Content Include="SPForumsPostList\Schema.xml" />
+    <Content Include="SPForumsPostList\SPForumsPostListInstance\Elements.xml" />
+    <Content Include="SPForumsPostTypeList\Elements.xml" />
+    <Content Include="SPForumsPostTypeList\Schema.xml" />
+    <Content Include="SPForumsPostTypeList\SPForumsPostTypeListInstance\Elements.xml" />
+    <Content Include="SPForumsReplyList\Elements.xml" />
+    <Content Include="SPForumsReplyList\EventReceiverForReplyList\Elements.xml" />
+    <Content Include="SPForumsReplyList\Schema.xml" />
+    <Content Include="SPForumsReplyList\SPForumsReplyListInstance\Elements.xml" />
+    <Content Include="SPForumsVWPLeftMenu\Elements.xml" />
+    <Content Include="SPForumsVWPLeftMenu\SPForumsVWPLeftMenu.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SPForumsVWPLeftMenu.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="SPForumsVWPNoticeAlert\Elements.xml" />
+    <Content Include="SPForumsVWPNoticeAlert\SPForumsVWPNoticeAlert.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SPForumsVWPNoticeAlert.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="SPForumsVWPNotice\Elements.xml" />
+    <Content Include="SPForumsVWPNotice\SPForumsVWPNotice.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SPForumsVWPNotice.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="SPForumsVWPReply\Elements.xml" />
+    <Content Include="SPForumsVWPReply\SPForumsVWPReply.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SPForumsVWPReply.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="SPForumsWPModifyUnReadState\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
